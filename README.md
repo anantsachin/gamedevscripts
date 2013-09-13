@@ -49,3 +49,5 @@ Other considerations:
 * Any spaces in the layer names are converted to underscores.
 * On the import side, I assume that layers prefixed with btn are assumed to be paired in the format: "btn buttonname up" and "btn buttonname down" and convert them into buttons automagically. The export script doesn't care about this feature, though (it sees them as normal images)
 * By default, text layers are exported as PNGs just like any other layer... if you name the layer "text layername", the metadata will also contain the font, font-size, and font-color. your importer can use this to set up text fields automagically.
+
+NOTE: my system is pretty similar to what Photoshop just unveiled in CC (Generator), only mine is more cumbersome (you have to manually export). They also do a lot of clever stuff with layer names (only layers named *.png or *.jpg or whatever get exported) that might be worth following.

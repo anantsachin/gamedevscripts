@@ -18,6 +18,8 @@ function savePNG(saveFile){
 
 function main()
 {
+	var docRef = app.activeDocument
+	var goodState = docRef.activeHistoryState;
 	app.preferences.rulerUnits = Units.PIXELS;
 	
 	var icon_sizes = [1024,512,256,152,144,128,120,114,76,72,57];
@@ -25,11 +27,10 @@ function main()
 	{
 	    var resize = app.activeDocument.resizeImage(icon_sizes[i],icon_sizes[i]);
 		saveImage(icon_sizes[i]);
+		//undo after each one or we get multiplicity-style copy-of-a-copy-of-a-copy
+		docRef.activeHistoryState = goodState;
 	}
 	
-	//undo a lot
-	var docRef = app.activeDocument
-	docRef.activeHistoryState = docRef.historyStates[docRef.historyStates.length-icon_sizes.length];
 	alert("Process complete");
 }
 

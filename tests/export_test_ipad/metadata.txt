@@ -1,0 +1,1 @@
+offscreen_object|-373|20||bot_right|455|327||bot_left|-455|327||top_right|455|-327||top_left|-455|-327||text_monaco|-195|261|000000|Monaco|center|48|267|40||static_text_monaco|3|1||text_courier|280|-174|000000|Courier|center|48|295|34||nested_asset|0|0

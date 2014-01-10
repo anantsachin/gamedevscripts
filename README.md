@@ -36,6 +36,7 @@ This script is basically a Flash-style (swc) library generator for Photoshop. It
 
 Other considerations:
 
+* there are two bogus exported layers -- root_width and root_height, which describe the document size
 * Layers starting with "guide" are ignored
 * I assume we're working at retina scale and want to also export at half size (and use coordinates from the half-sized version)
 * Layers are exported using their layer name

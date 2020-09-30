@@ -107,3 +107,6 @@ To export a set of overlapping sprites that all need to maintain their resolutio
 
 
 NOTE: my system is pretty similar to what Photoshop just unveiled in CC (Generator), only mine is more cumbersome (you have to manually export). They also do a lot of clever stuff with layer names (only layers named *.png or *.jpg or whatever get exported) that might be worth following.
+
+Software used:
+Unity
